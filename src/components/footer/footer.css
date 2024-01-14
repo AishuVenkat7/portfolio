@@ -1,0 +1,33 @@
+/* Add this to your existing CSS file or create a new one */
+
+.footer {
+  background-color: var(--container-color);
+  padding: 40px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__list p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 20px;
+}
+
+.home__social-icon {
+  color: var(--title-color-dark);
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.home__social-icon:hover {
+  color: rgb(93, 0, 255);
+}
