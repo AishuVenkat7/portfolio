@@ -13,7 +13,7 @@ const Qualification = () => {
     <section className="qualification section" id="qualification">
       <Fade bottom duration={1000} distance="20px">
         <h2 className="section__title">Qualification</h2>
-        <span className="section__subtitle">My personel journey</span>
+        <span className="section__subtitle">My personal journey</span>
       </Fade>
       <div className="qualification__container container">
         {/* education | experience */}

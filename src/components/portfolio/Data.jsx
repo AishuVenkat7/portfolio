@@ -31,7 +31,7 @@ export const projectsData = [
     image: Work4,
     title: "Publish-Subscribe System",
     github: "https://github.com/AishuVenkat7/WeatherNotification",
-    category: "docker",
+    category: "distributed systems",
   },
   {
     id: 5,
@@ -64,7 +64,7 @@ export const projectsNav = [
     name: "database",
   },
   {
-    name: "docker",
+    name: "distributed systems",
   },
   {
     name: "ML",

@@ -22,8 +22,8 @@ const About = () => {
               I am currently pursuing my Master's Degree in Computer Science at
               Santa Clara University. I have 3 years of work experience as a
               backend developer. My enthusiasm lies in developing software
-              products, and I thrive on continuous learning and exploring new
-              domains. As a full stack developer, I thrive on the challenge of
+              products, and I am keen on continuous learning and exploring new
+              domains. As a full-stack developer, I thrive on the challenge of
               creating seamless and innovative solutions. Eager to continuously
               expand my skill set, I embrace opportunities to learn new
               technologies and stay at the forefront of industry trends.

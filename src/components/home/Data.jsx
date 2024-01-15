@@ -19,7 +19,7 @@ const Data = () => {
       </h3>
       <p className="home__description">
         I am a passionate and dynamic individual with a keen interest in
-        technology, currently pursuing a graduate degree in computer science.
+        technology, currently pursuing a Master's Degree in Computer Science.
         With a love for versatility, I am open to exploring and contributing to
         various fields within the realm of technology. Let's connect and
         collaborate on exciting projects!

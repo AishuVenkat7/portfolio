@@ -58,8 +58,9 @@ const Contact = () => {
               <a
                 href="https://www.linkedin.com/in/aishuvenkat7/"
                 className="contact__button"
+                target="_blank"
               >
-                Lets Connect
+                Let's Connect
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>

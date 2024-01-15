@@ -106,7 +106,69 @@ const Experience = () => {
           </div>
         </div>
 
-        <div
+        {/* for directed research */}
+        <div className="services__content">
+          <Fade right duration={1500}>
+            <div>
+              <i className="uil uil-notebooks services__icon"></i>
+              <h3 className="services__title">Directed Research</h3>
+            </div>
+            <span className="services__button" onClick={() => toggleTab(2)}>
+              View More
+              <i className="uil uil-arrow-right services__button-icon"></i>
+            </span>
+          </Fade>
+          <div
+            className={
+              toggleState === 2
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
+            <div className="services__modal-content">
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times services__modal-close"
+              ></i>
+              <h3 className="services__modal-title">Directed Research</h3>
+              <p className="services__modal-description">
+                Started Working as a Research Assistant
+              </p>
+
+              <ul className="services__modal-services grid">
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    We are developing a mobile app designed to teach
+                    mathematical concepts specifically tailored for students who
+                    may not be fluent in English.
+                  </p>
+                </li>
+
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    <span style={{ fontWeight: "bold" }}>
+                      Technologies used:
+                    </span>{" "}
+                    Flutter, Figma
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Experience;
+
+// comment
+
+{
+  /* <div
           className={`flip-card ${isFlipped ? "flipped" : ""}`}
           onClick={handleFlip}
         >
@@ -134,52 +196,5 @@ const Experience = () => {
               </p>
             </div>
           </div>
-        </div>
-
-        {/* for directed research */}
-        {/* <div className="services__content">
-          <div>
-            <i className="uil uil services__icon"></i>
-            <h3 className="services__title"></h3>
-          </div>
-          <span className="services__button" onClick={() => toggleTab(2)}>
-            View More{" "}
-            <i className="uil uil-arrow-right services__button-icon"></i>
-          </span>
-          <div className={
-              toggleState === 2
-                ? "services__modal active-modal"
-                : "services__modal"
-            }>
-            <div className="services__modal-content">
-              <i onClick={() => toggleTab(0)} className="uil uil-times services__modal-close"></i>
-              <h3 className="services__modal-title"></h3>
-              <p className="services__modal-description">
-                description about my experience
-              </p>
-            //view more content 
-              <ul className="services__modal-services grid">
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">More description1</p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">More description2</p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">More description3</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div> */}
-      </div>
-    </section>
-  );
-};
-
-export default Experience;
+        </div> */
+}
