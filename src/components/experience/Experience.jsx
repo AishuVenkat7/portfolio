@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./experience.css";
+import { Fade } from "react-reveal";
 
 const Experience = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -15,19 +16,22 @@ const Experience = () => {
 
   return (
     <section className="services section" id="experience">
-      <h2 className="section__title">Experience</h2>
-      <span className="section__subtitle">Where I've Worked</span>
-
+      <Fade bottom duration={1000} distance="20px">
+        <h2 className="section__title">Experience</h2>
+        <span className="section__subtitle">Where I've Worked</span>
+      </Fade>
       <div className="services__container container grid">
         <div className="services__content">
-          <div>
-            <i className="uil uil-briefcase-alt services__icon"></i>
-            <h3 className="services__title">Mindtree Ltd</h3>
-          </div>
-          <span className="services__button" onClick={() => toggleTab(1)}>
-            View More
-            <i className="uil uil-arrow-right services__button-icon"></i>
-          </span>
+          <Fade left duration={1500}>
+            <div>
+              <i className="uil uil-briefcase-alt services__icon"></i>
+              <h3 className="services__title">Mindtree Ltd</h3>
+            </div>
+            <span className="services__button" onClick={() => toggleTab(1)}>
+              View More
+              <i className="uil uil-arrow-right services__button-icon"></i>
+            </span>
+          </Fade>
           <div
             className={
               toggleState === 1
@@ -107,16 +111,18 @@ const Experience = () => {
           onClick={handleFlip}
         >
           <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <span>
-                <i class="uil uil-search search__icon"></i>
-              </span>
-              <h3 className="search__title">Work Search</h3>
-              <div>
-                Flip Over
-                <i className="uil uil-arrow-right services__button-icon"></i>
+            <Fade right duration={1500}>
+              <div className="flip-card-front">
+                <span>
+                  <i class="uil uil-search search__icon"></i>
+                </span>
+                <h3 className="search__title">Work Search</h3>
+                <div>
+                  Flip Over
+                  <i className="uil uil-arrow-right services__button-icon"></i>
+                </div>
               </div>
-            </div>
+            </Fade>
             <div className="flip-card-back">
               <p>
                 I possess three years of experience in the software industry and

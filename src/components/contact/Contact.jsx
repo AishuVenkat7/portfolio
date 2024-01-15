@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+import { Fade } from "react-reveal";
 
 const Contact = () => {
   const form = useRef();
@@ -27,9 +28,10 @@ const Contact = () => {
 
   return (
     <section className="contact section" id="contact">
-      <h2 className="section__title">Get in touch</h2>
-      <span className="section__subtitle">Contact Me</span>
-
+      <Fade bottom duration={1000} distance="20px">
+        <h2 className="section__title">Get in touch</h2>
+        <span className="section__subtitle">Contact Me</span>
+      </Fade>
       <div className="contact__container container grid">
         <div className="contact__content">
           <h3 className="contact__title">Contact Details</h3>

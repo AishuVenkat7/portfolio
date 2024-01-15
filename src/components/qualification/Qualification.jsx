@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./qualification.css";
-import Slide from "react-reveal/Slide";
+import { Fade, Slide } from "react-reveal";
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -11,9 +11,10 @@ const Qualification = () => {
 
   return (
     <section className="qualification section" id="qualification">
-      <h2 className="section__title">Qualification</h2>
-      <span className="section__subtitle">My personel journey</span>
-
+      <Fade bottom duration={1000} distance="20px">
+        <h2 className="section__title">Qualification</h2>
+        <span className="section__subtitle">My personel journey</span>
+      </Fade>
       <div className="qualification__container container">
         {/* education | experience */}
         <div className="qualification__tabs">
